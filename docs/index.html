@@ -59,7 +59,7 @@
     <div id="app">
       <div class="card bg-light mb-4" @change="change" @dragover="dragover" @drop="drop">
         <div class="card-body">
-          <div class="p-5 text-center">Drop image here or <label class="text-primary">Browse... <input type="file" class="sr-only" id="file" accept="image/*" ref="input"></label></div>
+          <div class="p-5 text-center">Drop Image Here Or <label class="text-primary">Browse... <input type="file" class="sr-only" id="file" accept="image/*" ref="input"></label></div>
         </div>
       </div>
       <div class="row">
@@ -164,15 +164,15 @@
                 </div>
                 <div class="col-md-8">
                   <dl class="row">
-                    <dt class="col-sm-5">lastModified:</dt>
+                    <dt class="col-sm-5">LastModified:</dt>
                     <dd class="col-sm-7">{{ input.lastModified || 'N/A' }}</dd>
-                    <dt class="col-sm-5">lastModifiedDate:</dt>
+                    <dt class="col-sm-5">LastModifiedDate:</dt>
                     <dd class="col-sm-7">{{ input.lastModifiedDate || 'N/A' }}</dd>
-                    <dt class="col-sm-5">name:</dt>
+                    <dt class="col-sm-5">Name:</dt>
                     <dd class="col-sm-7">{{ input.name || 'N/A' }}</dd>
-                    <dt class="col-sm-5">type:</dt>
+                    <dt class="col-sm-5">Type:</dt>
                     <dd class="col-sm-7">{{ input.type || 'N/A' }}</dd>
-                    <dt class="col-sm-5">size:</dt>
+                    <dt class="col-sm-5">Size:</dt>
                     <dd class="col-sm-7">{{ input.size | prettySize }}</dd>
                   </dl>
                 </div>
@@ -195,15 +195,15 @@
                 </div>
                 <div class="col-md-8">
                   <dl class="row">
-                    <dt class="col-sm-5">lastModified:</dt>
+                    <dt class="col-sm-5">LastModified:</dt>
                     <dd class="col-sm-7">{{ output.lastModified || 'N/A' }}</dd>
-                    <dt class="col-sm-5">lastModifiedDate:</dt>
+                    <dt class="col-sm-5">LastModifiedDate:</dt>
                     <dd class="col-sm-7">{{ output.lastModifiedDate || 'N/A' }}</dd>
-                    <dt class="col-sm-5">name:</dt>
+                    <dt class="col-sm-5">Name:</dt>
                     <dd class="col-sm-7">{{ output.name || 'N/A' }}</dd>
-                    <dt class="col-sm-5">type:</dt>
+                    <dt class="col-sm-5">Type:</dt>
                     <dd class="col-sm-7">{{ output.type || 'N/A' }}</dd>
-                    <dt class="col-sm-5">size:</dt>
+                    <dt class="col-sm-5">Size:</dt>
                     <dd class="col-sm-7">{{ output.size | prettySize }}
                       <span v-if="output.size">({{ ((1 - (output.size / input.size)) * 100).toFixed(2) }}% off)</span>
                     </dd>
